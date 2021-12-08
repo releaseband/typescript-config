@@ -7,7 +7,7 @@ echo @releaseband:registry=https://npm.pkg.github.com > .npmrc
 ```
 
 ```
-npm i -D @releaseband/typescript-config
+npm i @releaseband/typescript-config
 ```
 
 `tsconfig.json`:
@@ -18,7 +18,12 @@ npm i -D @releaseband/typescript-config
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": [".eslintrc.js", "prettier.config.js", "src"],
+  "include": [
+    ".eslintrc.js",
+    "prettier.config.js",
+    "lint-staged.config.js",
+    "commitlint.config.js"
+  ],
   "exclude": []
 }
 
