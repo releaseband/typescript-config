@@ -13,7 +13,6 @@
     // Emit
     // output .d.ts declaration files for consumers
     "declaration": true,
-    "outDir": "dist",
     "importHelpers": false,
     "noEmit": true,
     "removeComments": true,
