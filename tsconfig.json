@@ -62,6 +62,5 @@
     // Completeness
     // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
     "skipLibCheck": true
-  },
-  "exclude": ["node_modules", ".history"]
+  }
 }
