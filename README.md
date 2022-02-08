@@ -1,30 +1,18 @@
-# Installing
+# @releaseband/typescript-config
 
-create [.npmrc](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc) file in the **root project folder**:
+[typescript](https://github.com/microsoft/TypeScript) shareable config
 
+## Installing
+
+```bash
+npm i -D @releaseband/typescript-config
+npx install-peerdeps --dev @releaseband/typescript-config
 ```
-echo @releaseband:registry=https://npm.pkg.github.com > .npmrc
-```
 
-```
-npm i @releaseband/typescript-config
-```
+create `tsconfig.json` file in the **root project folder**:
 
-`tsconfig.json`:
-
-```js
+```json
 {
-  "extends": "@releaseband/typescript-config/tsconfig.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
-  "include": [
-    ".eslintrc.js",
-    "prettier.config.js",
-    "lint-staged.config.js",
-    "commitlint.config.js"
-  ],
-  "exclude": []
+  "extends": "@releaseband/typescript-config"
 }
-
 ```

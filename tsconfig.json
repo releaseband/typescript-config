@@ -2,13 +2,14 @@
   "compilerOptions": {
     // Language and Environment
     "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
 
     // Modules
     "module": "ESNext",
     // use Node's module resolution algorithm, instead of the legacy TS one
     "moduleResolution": "Node",
+    "resolveJsonModule": true,
 
     // Emit
     // output .d.ts declaration files for consumers
@@ -25,9 +26,11 @@
 
     // Interop Constraints
     // interop between ESM and CJS modules. Recommended by TS
-    "esModuleInterop": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
     // error out if import and file system have a casing mismatch. Recommended by TS
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
 
     // Type Checking
     // stricter type-checking for stronger correctness. Recommended by TS
@@ -58,6 +61,7 @@
 
     // Completeness
     // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "include": ["./src"]
   }
 }

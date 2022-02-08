@@ -1,8 +1,41 @@
 {
   "name": "@releaseband/typescript-config",
-  "version": "0.1.2",
+  "version": "0.0.0-semantic-release",
   "description": "typescript config",
+  "author": "releaseband",
+  "license": "MIT",
   "main": "tsconfig.json",
+  "scripts": {
+    "commit": "cz",
+    "prettier": "prettier . --write --ignore-unknown",
+    "markdownlint": "markdownlint '**/*.md' --fix",
+    "prepare": "is-ci || husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/cz-commitlint": "^16.1.0",
+    "@releaseband/commitlint-config": "^1.0.0",
+    "@releaseband/markdownlint-config": "^2.0.0",
+    "@releaseband/prettier-config": "^1.0.0",
+    "@releaseband/semantic-release-npm-github-config": "^1.2.1",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^12.3.3",
+    "markdownlint-cli": "^0.31.0",
+    "prettier": "^2.5.1",
+    "semantic-release": "^19.0.2",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/releaseband/typescript-config.git"
@@ -11,10 +44,8 @@
     "url": "https://github.com/releaseband/typescript-config/issues"
   },
   "homepage": "https://github.com/releaseband/typescript-config#readme",
-  "files": [
-    "tsconfig.json"
-  ],
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+    "typescript",
+    "typescript-config"
+  ]
 }
