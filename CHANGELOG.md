@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/releaseband/typescript-config/compare/v0.2.0...v0.2.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* add exclude in tsconfig ([b174204](https://github.com/releaseband/typescript-config/commit/b17420487a94c731ca77e7150be3c783a37c55a7))
+
 # [0.2.0](https://github.com/releaseband/typescript-config/compare/v0.1.2...v0.2.0) (2022-02-08)
 
 
