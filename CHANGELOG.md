@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/releaseband/typescript-config/compare/v0.2.2...v0.2.3) (2022-02-10)
+
+
+### Bug Fixes
+
+* set esModuleInterop=true ([6d1752a](https://github.com/releaseband/typescript-config/commit/6d1752a4a0e2d3a50158b6dce63a57616df28e42))
+
 ## [0.2.2](https://github.com/releaseband/typescript-config/compare/v0.2.1...v0.2.2) (2022-02-08)
 
 
