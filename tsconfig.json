@@ -26,7 +26,7 @@
 
     // Interop Constraints
     // interop between ESM and CJS modules. Recommended by TS
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     // error out if import and file system have a casing mismatch. Recommended by TS
     "forceConsistentCasingInFileNames": true,
